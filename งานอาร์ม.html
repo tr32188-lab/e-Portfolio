@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | ณภัทร์ กระสินพันธุ์</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+    background: #0b1120;
+    color: white;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(11,17,32,0.95);
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 1px solid #24344d;
+}
+
+.logo {
+    color: #38bdf8;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+section {
+    padding: 100px 10%;
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.home h1 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.home h1 span {
+    color: #38bdf8;
+}
+
+.home p {
+    color: #b8c5d6;
+    line-height: 1.9;
+}
+
+.profile {
+    width: 280px;
+    height: 350px;
+    border-radius: 25px;
+    object-fit: cover;
+    border: 3px solid #38bdf8;
+    background: #17243a;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: #0284c7;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background: #38bdf8;
+    color: #0b1120;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #38bdf8;
+}
+
+.card {
+    background: #142037;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #263b59;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #c3cede;
+    line-height: 1.8;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 20px;
+}
+
+.skill {
+    background: #142037;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.skill h3 {
+    color: #38bdf8;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #060b16;
+    color: #9caec4;
+}
+
+@media(max-width:768px) {
+    header {
+        padding: 15px 5%;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    nav a {
+        margin: 0 8px 0 0;
+        font-size: 12px;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 140px;
+    }
+
+    .home h1 {
+        font-size: 30px;
+    }
+
+    .profile {
+        width: 220px;
+        height: 260px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">MY PORTFOLIO</div>
+    <nav>
+        <a href="#home">หน้าหลัก</a>
+        <a href="#about">ประวัติ</a>
+        <a href="#education">การศึกษา</a>
+        <a href="#skills">ทักษะ</a>
+        <a href="#works">ผลงาน</a>
+        <a href="#contact">ติดต่อ</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section class="home" id="home">
+    <div>
+        <p>WELCOME TO MY PORTFOLIO</p>
+        <h1>สวัสดีครับ ผมชื่อ<br>
+        <span>ณภัทร์ กระสินพันธุ์</span></h1>
+        <p>
+        นักเรียนชั้นมัธยมศึกษาปีที่ 6/13<br>
+        มีความสนใจด้านเครื่องกล ยานยนต์ และเทคโนโลยี
+        </p>
+        <a href="#about" class="btn">รู้จักผมเพิ่มเติม</a>
+    </div>
+
+    <!-- เปลี่ยน profile.jpg เป็นรูปของตัวเอง -->
+    <img src="profile.jpg" class="profile" alt="รูปโปรไฟล์">
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2 class="title">ABOUT ME</h2>
+    <div class="card">
+        <h3>ประวัติส่วนตัว</h3>
+        <p>
+        ชื่อ : นายณภัทร์ กระสินพันธุ์<br>
+        ชื่อเล่น : ณภัทร์<br>
+        ระดับการศึกษา : มัธยมศึกษาปีที่ 6<br>
+        ห้อง : 6/13 เลขที่ 14<br>
+        ความสนใจ : เครื่องกล รถยนต์ และงานช่าง
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>แรงบันดาลใจ</h3>
+        <p>
+        ผมได้รับแรงบันดาลใจจากคุณตาที่เคยทำงานเป็นช่างก่อสร้าง
+        ทำให้ตั้งแต่เด็กได้เห็นและเรียนรู้เกี่ยวกับเครื่องมือช่างหลายประเภท
+        เมื่อโตขึ้นผมเริ่มสนใจรถยนต์และเครื่องยนต์มากขึ้น
+        จึงทำให้ผมมีความตั้งใจที่จะศึกษาต่อในด้านวิศวกรรมเครื่องกล
+        เพื่อนำความรู้ไปพัฒนาตนเองและประกอบอาชีพในอนาคต
+        </p>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <h2 class="title">EDUCATION</h2>
+    <div class="card">
+        <h3>ระดับมัธยมศึกษาตอนปลาย</h3>
+        <p>
+        กำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 6/13<br>
+        เลขที่ 14
+        </p>
+    </div>
+    <div class="card">
+        <h3>เป้าหมายการศึกษาต่อ</h3>
+        <p>
+        คณะครุศาสตร์อุตสาหกรรม<br>
+        สาขาวิศวกรรมเครื่องกล
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2 class="title">MY SKILLS</h2>
+    <div class="grid">
+        <div class="skill">
+            <h3>🔧</h3>
+            <p>ทักษะงานช่าง</p>
+        </div>
+        <div class="skill">
+            <h3>🚗</h3>
+            <p>ความรู้ด้านยานยนต์</p>
+        </div>
+        <div class="skill">
+            <h3>⚙️</h3>
+            <p>ความสนใจด้านเครื่องกล</p>
+        </div>
+        <div class="skill">
+            <h3>💻</h3>
+            <p>ทักษะด้านเทคโนโลยี</p>
+        </div>
+    </div>
+</section>
+
+<!-- WORKS -->
+<section id="works">
+    <h2 class="title">MY PORTFOLIO</h2>
+    <div class="grid">
+
+        <div class="card">
+            <h3>ผลงานที่ 01</h3>
+            <p>กิจกรรมและผลงานด้านการศึกษา</p>
+        </div>
+
+        <div class="card">
+            <h3>ผลงานที่ 02</h3>
+            <p>ผลงานด้านเทคโนโลยีและคอมพิวเตอร์</p>
+        </div>
+
+        <div class="card">
+            <h3>ผลงานที่ 03</h3>
+            <p>กิจกรรมและประสบการณ์ด้านงานช่าง</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="title">CONTACT</h2>
+    <div class="card" style="text-align:center">
+        <h3>ช่องทางการติดต่อ</h3>
+        <p>
+        ชื่อ : ณภัทร์ กระสินพันธุ์<br>
+        อีเมล : ใส่อีเมลของคุณ<br>
+        Facebook : ใส่ลิงก์ Facebook ของคุณ
+        </p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Naphat Krasinphan | MY PORTFOLIO
+</footer>
+
+</body>
+</html>
